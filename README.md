@@ -13,7 +13,7 @@
 
   batch_size = 每次取樣進行訓練的個數
 
-  Dense_dim = 每層神經元的輸出維度
+  Dense_dim = 每層神經元的輸出維度 (神經元個數)
 
   z_dim = 輸入進Generator雜訊向量的維度
 
@@ -28,7 +28,7 @@
 3. 以 Generator loss 值而言，z_dim= 100 或 150 時訓練效果優於 z_dim=50 (值較低)。
 4. 以 Generator 繪製隨機數字圖片而言，三種 z_dim 訓練的結果差異不大。
 ---
-### Exp2. 比較神經元的輸出維度對訓練結果的差異 Dense_dim=64,128,256 
+### Exp2. 比較神經元的個數對訓練結果的差異 Dense_dim=64,128,256 
 ![image](https://github.com/user-attachments/assets/a306f2d5-df07-4e38-b7e1-9d40b65c028b)
 ![image](https://github.com/user-attachments/assets/35fb2d17-ee92-4644-b916-dc40c26c2b39)
 ![image](https://github.com/user-attachments/assets/999ce414-6f38-4031-857b-2a03905c39fa)
