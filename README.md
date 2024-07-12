@@ -1,8 +1,13 @@
-## 課堂作業：比較不同參數使用在GAN的訓練結果
-### 使用Keras中 MNIST資料集作為樣本
+# 課堂作業：比較不同參數使用在GAN的訓練結果
+AI跨領域數據科學人才培訓班
+### 使用技能
+1. 使用深度學神經網路 (Keras模組)
+2. 了解參數意義並判讀結果
+### 架構
+**使用Keras中 手寫數字辨識資料集 (MNIST資料集) 作為樣本**
+
 ![image](https://github.com/user-attachments/assets/700b252f-1bb0-4a9b-8047-e07d25e9d43f)
 
-### 架構
 **Discriminator**：從真實照片中取樣，對比從Generator生成的照片取樣中的差異，計算損失函數的值 (損失函數值越大，表示Discriminator越分不清真假)，回頭修正Discriminator和Generator
 
 **Generator**：從隨機雜訊向量產生的圖片作圖，計算損失函數的值 (損失函數值越小，表示Generator生成越真實的照片) ，回頭訓練Generator (此時Discriminator不修正參數)
